@@ -1,4 +1,4 @@
-export default function MovieCard({ title, year, poster }) {
+export default function MovieCard({ title, year, poster, genre }) {
     return (
         <>
             <article className="card">
@@ -7,6 +7,7 @@ export default function MovieCard({ title, year, poster }) {
                     <h3>{title}</h3>
                     <div className="altro">
                         <p>{year}</p>
+                        <p>{genre}</p>
                         <button className="btn">👀</button>
                     </div>
                 </div>
