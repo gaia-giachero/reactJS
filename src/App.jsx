@@ -1,15 +1,15 @@
 import Container from "./components/Container"
-import MovieCard from "./components/MovieCard"
+import MovieList from "./components/MovieList";
 
 import './App.css';
-import MovieList from "./components/MovieList";
+import { movies } from "./data/movies.js";
 
 function App() {
 
   return (
     <>
       <Container>
-        <MovieList />
+        <MovieList items={movies} />
       </Container>
     </>
   )
