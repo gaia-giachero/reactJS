@@ -1,9 +1,9 @@
 import MovieCard from "./MovieCard";
 
-export default function MovieList({ items, onToggleFavorite }) {
+export default function MovieList({ onToggleFavorite, filteredMovies }) {
   return (
     <>
-      {items.map((item) => (
+      {filteredMovies.map((item) => (
         <MovieCard
           key={item.id}
           id={item.id}

@@ -1,9 +1,10 @@
 .container{
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1000px;
   padding: 20px;
   gap: 20px;
+  padding: 30px 50px;
 }
 
 .card{
@@ -13,7 +14,7 @@
 }
 
 img{
-  width: 200px;
+  width: 210px;
   height: 300px;
   border-radius: 15px;
 }
@@ -32,6 +33,12 @@ img{
   gap: 10px;
 }
 
+.dettagli{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
 h3, p{
   color: #000;
   margin: 0;
@@ -45,12 +52,33 @@ p{
 .btn, .btn-favorite{
   border-radius: 20px;
   border: 1px solid #000;
-  padding: 5px 15px;
+  padding: 5px 20px;
   background-color: #f2f2f2;
   color: #000;
 }
 
 .btn-favorite{
   font-weight: bold;
-  background-color: #fff9c5;
+  color: #ffbb00;
+  background-color: #313131;
+}
+
+.search-bar{
+  width: 500px;
+  max-width: 1000px;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid #f2f2f2;
+}
+
+.preferiti{
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
 }
