@@ -1,4 +1,4 @@
-export default function MovieCard({ title, year, poster, genre, watched }) {
+export default function MovieCard({ id, title, year, poster, genre, watched, favorite, onToggleFavorite }) {
   return (
     <>
       <article className="card">
@@ -12,6 +12,7 @@ export default function MovieCard({ title, year, poster, genre, watched }) {
             {watched ? "✅ visto" : "👀 da vedere"}
           </p>
         </div>
+        <button className={favorite ? 'btn-favorite' : 'btn'} onClick={() => onToggleFavorite(id)}><span>{favorite ? '⭐' : '★'}</span> Preferito</button>
       </article>
     </>
   );
